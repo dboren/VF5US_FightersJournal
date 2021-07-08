@@ -35,7 +35,7 @@ CharacterLog.init(
                 key: 'id',
             },
         },
-        characterName: {
+        character_name: {
             type: DataTypes.STRING,
             references: {
                 model: 'character',
