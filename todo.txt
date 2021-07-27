@@ -1,0 +1,11 @@
+1) Remaining backend routes (phase 1)
+    a) Create CharLogs
+        i) get CharLogs
+    b) Create sessions
+        i) get sessions
+    c) Create notes
+        i) get notes
+        ii) edit notes
+    d) create combos
+        i) get combos
+        ii) edit combos
