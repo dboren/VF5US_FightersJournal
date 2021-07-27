@@ -2,7 +2,6 @@ const Character = require('./character');
 const CharLog = require('./charLog');
 const Combo = require('./combo');
 const Note = require('./note');
-const { hasMany } = require('./session');
 const Session = require('./session');
 const User = require('./user');
 
