@@ -28,20 +28,20 @@ CharacterLog.init(
                 key: 'id',
             },
         },
-        character_id: {
-            type: DataTypes.INTEGER,
-            references: {
-                model: 'character',
-                key: 'id',
-            },
-        },
-        character_name: {
-            type: DataTypes.STRING,
-            references: {
-                model: 'character',
-                key: 'name',
-            },
-        },
+        // character_id: {
+        //     type: DataTypes.INTEGER,
+        //     references: {
+        //         model: 'character',
+        //         key: 'id',
+        //     },
+        // },
+        // character_name: {
+        //     type: DataTypes.STRING,
+        //     references: {
+        //         model: 'character',
+        //         key: 'name',
+        //     },
+        // },
     },
     {
         sequelize,
