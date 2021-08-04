@@ -31,7 +31,7 @@ Note.init(
         log_id: {
             type: DataTypes.INTEGER,
             references: {
-                model: 'charLog',
+                model: 'log',
                 key: 'id',
             },
         },

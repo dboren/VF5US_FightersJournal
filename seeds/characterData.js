@@ -25,7 +25,7 @@ const characterdata = [
     },
     {
         name: "Eileen",
-        fighting_style: "Monkey-Style Kung Fu (ada Kou-ken)",
+        fighting_style: "Monkey-Style Kung Fu (aka Kou-ken)",
         weight_class: "Super Light",
         portrait: "../assets/images/portraits/eileen-hdr.jpg",
         country: "China",

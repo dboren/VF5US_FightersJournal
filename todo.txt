@@ -1,6 +1,6 @@
 1) Remaining backend routes (phase 1)
-    a) Create CharLogs
-        i) get CharLogs
+    a) Create Logs ***Determine cause of "id doesn't have defualt value" error***
+        i) get Logs
     b) Create sessions
         i) get sessions
     c) Create notes

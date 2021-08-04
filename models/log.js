@@ -1,20 +1,24 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-class CharacterLog extends Model {}
+class Log extends Model {}
 
-CharacterLog.init(
+Log.init(
     {
         id: {
             type: DataTypes.INTEGER,
             allowNull: false,
             primaryKey: true,
-            autoincrement: true,
+            autoIncrement: true,
         },
         date_added: {
             type: DataTypes.DATE,
             allowNull: false,
             defaultValue: DataTypes.NOW,
+        },
+        character_name: {
+            type: DataTypes.STRING,
+            allowNull: false,
         },
         hours_played: {
             type: DataTypes.INTEGER,
@@ -28,27 +32,13 @@ CharacterLog.init(
                 key: 'id',
             },
         },
-        // character_id: {
-        //     type: DataTypes.INTEGER,
-        //     references: {
-        //         model: 'character',
-        //         key: 'id',
-        //     },
-        // },
-        // character_name: {
-        //     type: DataTypes.STRING,
-        //     references: {
-        //         model: 'character',
-        //         key: 'name',
-        //     },
-        // },
     },
     {
         sequelize,
         freezeTableName: true,
         underscored: true,
-        modelName: 'charLog',
+        modelName: 'log',
     }
 );
 
-module.exports = CharacterLog;
+module.exports = Log;
