@@ -1,40 +1,40 @@
 const Character = require('./character');
-const CharLog = require('./charLog');
+const Log = require('./log');
 const Combo = require('./combo');
 const Note = require('./note');
 const Session = require('./session');
 const User = require('./user');
 
-CharLog.hasMany(Note, {
+Log.hasMany(Note, {
     foreignKey: 'log_id',
 });
 
-Note.belongsTo(CharLog, {
+Note.belongsTo(Log, {
     foreignKey: 'log_id',
 });
 
-CharLog.hasMany(Combo, {
+Log.hasMany(Combo, {
     foreignKey: 'log_id',
 });
 
-Combo.belongsTo(CharLog, {
+Combo.belongsTo(Log, {
     foreignKey: 'log_id',
 });
 
-CharLog.hasMany(Session, {
+Log.hasMany(Session, {
     foreignKey: 'log_id',
 });
 
-Session.belongsTo(CharLog, {
+Session.belongsTo(Log, {
     foreignKey: 'log_id',
 });
 
-User.hasMany(CharLog, {
+User.hasMany(Log, {
     foreignKey: 'user_id',
 });
 
-CharLog.belongsTo(User, {
+Log.belongsTo(User, {
     foreignKey: 'user_id',
 });
 
-module.exports = {Character, CharLog, Combo, Note, Session, User}
+module.exports = {Character, Log, Combo, Note, Session, User}
