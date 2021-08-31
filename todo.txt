@@ -1,11 +1,7 @@
 1) Remaining backend routes (phase 1)
-    a) Create Logs ***Determine cause of "id doesn't have defualt value" error***
-        i) get Logs
-    b) Create sessions
-        i) get sessions
-    c) Create notes
-        i) get notes
-        ii) edit notes
-    d) create combos
-        i) get combos
-        ii) edit combos
+    a) get Logs
+    b) get sessions
+    c) get notes
+        i) edit notes
+    d) get combos
+        i) edit combos
