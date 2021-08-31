@@ -13,4 +13,16 @@ router.post('/', async (req, res) => {
     }
 });
 
+router.get('/', async (req, res) => {
+    try {
+        const logData = await Log.findAll();
+
+        res.status(200).json(logData);
+
+
+    } catch (err) {
+        res.status(500).json(err);
+    }
+});
+
 module.exports = router;
