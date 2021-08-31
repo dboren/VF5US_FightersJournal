@@ -13,11 +13,13 @@ Combo.init(
         },
         ch_only: {
             type: DataTypes.BOOLEAN,
+            defaultValue: false,
             allowNull: true,
         },
         requires_wall: {
             type: DataTypes.BOOLEAN,
-            allowNull: false
+            defaultValue: false,
+            allowNull: true,
         },
         input: {
             type: DataTypes.STRING,
