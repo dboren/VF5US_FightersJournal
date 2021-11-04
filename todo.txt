@@ -1,7 +1,13 @@
 1) Remaining backend routes (phase 1)
-    a) get Logs
+    a) get Logs 
     b) get sessions
-    c) get notes
-        i) edit notes
+    c) get notes (done)
+        i) edit notes (done)
     d) get combos
         i) edit combos
+
+
+Need to determine why route to getting specific character by ID isn't working (500 error code isn't too helpful).
+    Getting specific notes by ID is working. Route is set up the same way for characters yet I'm getting the error code.
+        Determined that both models correctly have ID as the primary key, which is  how the get request is specified.
+            Will focus next on setting up get-by-id routes for other models to see if the error occurs on any others.
