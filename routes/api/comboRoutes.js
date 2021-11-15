@@ -13,4 +13,14 @@ router.post('/', async (req, res) => {
     }
 });
 
+router.get('/', async (req, res) => {
+    try {
+        const comboData = await Combo.findAll();
+
+        res.status(200).json(comboData);
+    } catch (err) {
+        res.status(500).json(err);
+    }
+});
+
 module.exports = router;
