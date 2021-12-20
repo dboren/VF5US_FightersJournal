@@ -1,6 +1,7 @@
 1) Remaining backend routes (phase 1)
-    a) get Logs 
-    b) get sessions
+    a) get Logs (done)
+    b) get sessions (done)
+        i) edit sessions
     c) get notes (done)
         i) edit notes (done)
     d) get combos
