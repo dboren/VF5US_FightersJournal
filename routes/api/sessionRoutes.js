@@ -41,4 +41,24 @@ router.get('/:id', async (req, res) => {
     }
 })
 
+router.put('/update/:id', (req, res) => {
+    Session.update(
+        {
+            duration: req.body.duration,
+            activity: req.body.activity,
+        },
+        {
+            where: {
+                id: req.params.id,
+            },
+        })
+        .then((updateSession) => {
+
+            res.status(200).json(updateSession);
+
+        }).catch((err) => {
+            res.status(400).json(err);
+        });
+});
+
 module.exports = router;
