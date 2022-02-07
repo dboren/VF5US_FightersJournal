@@ -12,3 +12,5 @@ Need to determine why route to getting specific character by ID isn't working (5
     Getting specific notes by ID is working. Route is set up the same way for characters yet I'm getting the error code.
         Determined that both models correctly have ID as the primary key, which is  how the get request is specified.
             Will focus next on setting up get-by-id routes for other models to see if the error occurs on any others.
+
+2/6/2022 note: just recloned the repo and reseeded db after I had to get my computer hard drive replaced. Making sure github still synchs properly. Will need to test routing again and make sure it's still properly connecting to the database as my insomnia tests are not giving me the expected result so far.
