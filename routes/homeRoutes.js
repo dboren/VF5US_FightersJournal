@@ -19,22 +19,22 @@ const { Character, Combo, Log, Note, Session, User } = require('../models');
 //     }
 // });
 
-router.get('/character/:id', async (req, res) => {
-    try {
-      const characterData = await Character.findByPK(req.params.id);
+// router.get('/character/:id', async (req, res) => {
+//     try {
+//       const characterData = await Character.findByPK(req.params.id);
       
-      const character = characterData.get({ plain: true });
+//       const character = characterData.get({ plain: true });
   
-      if (!characterData) {
-        res.status(404).json({ message: "No character found" });
-        return;
-      }
+//       if (!characterData) {
+//         res.status(404).json({ message: "No character found" });
+//         return;
+//       }
   
-      res.status(200).json(characterData);
-    } catch (err) {
-      res.status(500).json(err);
-    }
-  });
+//       res.status(200).json(characterData);
+//     } catch (err) {
+//       res.status(500).json(err);
+//     }
+//   });
 
 
 
